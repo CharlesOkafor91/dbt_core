@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: snowflake_sample_data
+    description: "a sample database provided by snowflake"
+    database: SNOWFLAKE_SAMPLE_DATA
+    schema: TPCDS_SF10TCL
+    #[database](/reference/resource-properties/database): raw  
+    #[schema](/reference/resource-properties/schema)*: jaffle_shop  
+    tables:
+      - name: store_sales
+        description: "details about the sales in the store"
